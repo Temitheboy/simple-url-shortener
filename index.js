@@ -24,6 +24,7 @@ function genhash(){
     if (window.location.hash == ""){
         window.location.hash = getrandom();
     }
+    return window.location.hash;
 }
 
 function send_request(url) {
@@ -39,8 +40,10 @@ function send_request(url) {
 
 function shorturl(){
     var longurl = geturl();
-    genhash();
-    send_request(longurl);
+    var hash = genhash();
+    // localStorage.setItem()
+    // send_request(longurl);
+    alert(hash);
 }
 
 var hashh = window.location.hash.substr(1)
@@ -55,3 +58,5 @@ if (window.location.hash != "") {
 
     });
 }
+
+document.querySelector("#btn").addEventListener("click")
