@@ -59,4 +59,4 @@ if (window.location.hash != "") {
     });
 }
 
-document.querySelector("#btn").addEventListener("click")
+document.querySelector("#btn").addEventListener("click", shorturl());
