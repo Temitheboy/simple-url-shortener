@@ -5,9 +5,9 @@ function geturl(){
     var protocol_ok = url.startsWith("http://") || url.startsWith("https://") || url.startsWith("ftp://");
     if(!protocol_ok){
         newurl = "https://"+url;
-        return newurl;
+        return newurl
         }else{
-            return url;
+            return url
         }
 }
 
@@ -28,7 +28,7 @@ function genhash(){
 }
 
 function send_request(url) {
-    this.url = url;
+    this.url = url
     $.ajax({
         'url': endpoint + "/" + window.location.hash.substr(1),
         'type': 'POST',
@@ -39,7 +39,7 @@ function send_request(url) {
 }
 
 function shorturl(){
-    var longurl = geturl();
+    var longurl = geturl()
     var hash = genhash();
     // localStorage.setItem()
     // send_request(longurl)
