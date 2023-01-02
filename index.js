@@ -42,7 +42,7 @@ function shorturl(){
     var longurl = geturl();
     var hash = genhash();
     // localStorage.setItem()
-    // send_request(longurl);
+    // send_request(longurl)
     alert(hash);
 }
 
